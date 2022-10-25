@@ -1,0 +1,111 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color:#33CC66;
+    background:#000;
+    font-size:16px;
+}
+
+p {
+    color:#33CC66;
+    position: relative;
+    width:max-content;
+}
+
+p::before,
+p::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@keyframes typewriter {
+    from{left:0%;}
+    to {left:100%;}
+}
+
+@keyframes blink {
+    0% {background:#33CC66;}
+    99% {background:#33CC66;}
+    100% {background: transparent;}
+}
+
+.step1::before {
+    background:black;
+    animation: typewriter 1200ms steps(30) forwards;
+    animation-delay: 1s;
+}
+
+.step1::after {
+    width:0.05em;
+    background: #33CC66;
+    animation:typewriter 1200ms steps(30) 1s forwards, blink 1200ms steps(100) 1s forwards;
+}
+
+.step2::before {
+    background:black;
+    animation: typewriter 1400ms steps(35) forwards;
+    animation-delay: 2200ms;
+}
+
+.step2::after {
+    width:0.05em;
+    background: black;
+    animation:typewriter 1400ms steps(35) 2200ms forwards, blink 1400ms steps(100) 2200ms forwards;
+}
+
+.step3::before {
+    background:black;
+    animation: typewriter 1840ms steps(46) forwards;
+    animation-delay: 3600ms;
+}
+
+.step3::after {
+    width:0.05em;
+    background: black;
+    animation:typewriter 1840ms steps(46) 3600ms forwards, blink 1840ms steps(100) 3600ms forwards;
+}
+
+.step4::before {
+    background:black;
+    animation: typewriter 400ms steps(12) forwards;
+    animation-delay: 5440ms;
+}
+
+.step4::after {
+    width:0.05em;
+    background: black;
+    animation:typewriter 400ms steps(35) 5440ms forwards, blink 400ms steps(100) 5440ms forwards;
+}
+
+.step5::before {
+    background:black;
+    animation: typewriter 0ms steps(1) forwards;
+    animation-delay: 5840ms;
+}
+
+.step5 {
+    display:inline;
+}
+
+.text {
+    background:black;
+    opacity: 0;
+    outline:none;
+    color:#33CC66;
+    font-size:16px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: username 0ms forwards;
+    animation-delay: 5840ms;
+    border:none;
+    cursor: default;
+}
+
+@keyframes username {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.film {
+    padding:20px;
+    margin-top:150px;
+    border-radius:25px;
+    min-height:100vh;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.anbefalt {
+    margin: 10px 10px 0px 10px;
+    grid-template-columns: 1fr;
+    display: grid;
+    border-radius:25px;
+    height: 1050px;
+    justify-items: right;
+}
+
+.anbefalt h1 {
+    height: 75px;
+}
+
+.video {
+    height: auto;
+    margin: 40px;
+}
+
+.video h1 {
+    font-weight: 800;
+}
+
+.video h1 span {
+    color: #33CC66;
+}
+
+.item {
+    width: 200px;
+    height: 145px;
+    margin: 0;
+    text-decoration: none;
+    border-bottom: solid 2px #33CC66;
+}
+
+.item:last-of-type {
+    border:none;
+}
+
+.item h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 2px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.bilde img {
+    width: inherit;
+}
+
+.bilde {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    transition: all .3s ease;
+    border-radius: 15px;
+}
+
+.item:hover > .bilde {
+    transform:scale(1.03);
+}
+
+
+.like a {
+    color:white;
+    float:right;
+    font-size:26px;
+    text-decoration: none;
+}
+
+.like p{
+    display:inline;
+    color:#33CC66;
+    font-weight: 800;
+    font-size:20px;
+}
+
+.like i {
+    color:#333;
+}
+
+.commentsheader {
+    color:#fff;
+    font-weight: 800;
+    margin-top:50px;
+    font-size:20px;
+    position: relative;
+}
+
+.commentsheader span {
+    font-size:8px;
+    position: absolute;
+    left:115px;
+    top:2px;
+}
+
+.user {
+    margin-top: 5px;
+    text-align: left;
+    position: relative;
+  }
+
+
+  
+  .user .user-items {
+    color:#33CC66;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    background:#333;
+    width: 45px;
+    height: 45px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .comment {
+    border-bottom: solid 1px #666;
+  }
+
+  .comment .user .userinfo {
+      position: absolute;
+      left:30px;
+      top:5px;
+  }
+
+  .user .bruker {
+      display:inline;
+  }
+
+  
+  .user .navn {
+      font-weight: 400;
+      color: #fff;
+      font-size:15px;
+      margin-left: 20px;
+  }
+  
+  .user .brukernavn {
+      text-align: left;
+      font-weight: 400;
+      color: #999;
+      font-size: 12px;
+  }
+  
+  .user p{
+    display:block;
+    height: 20px;
+  }
+
+  .comment .commenttext {
+      color:#fff;
+      font-size:14px;
+      margin-top:10px;
+      padding-bottom: 10px;
+  }
+
+  .comment .like {
+      left:0;
+      position: absolute;
+  }
+
+  .comment .like a {
+      color:#33CC66;
+      font-size:16px;
+  }
+
+  .comment .like a i {
+      color:#333;
+  }
+
+  .commentform {
+    margin-top:20px;
+    margin-bottom:50px;
+  }
+
+  .commentform textarea{
+    background:#333;
+    width:80%;
+    border:none;
+    border-bottom: solid 1px #333;
+    padding:10px;
+    resize: none;
+    color:white;
+    transition: all 0.1s ease;
+    height: 50px;
+  }
+
+  .commentform textarea:focus {
+      outline:none;
+      border-color:#33CC66;
+  }
+
+  .commentform button {
+    height: 50px;
+    width:10%;
+    background:#33CC66;
+    border:none;
+    color:#fff;
+    font-weight: 800;
+    font-size:18px;
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s ease;
+  }

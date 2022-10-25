@@ -1,0 +1,685 @@
+/*
+NibbaPlay by Bitchboy IT
++-----------------------------------------------------+
+|   _   _ _ _     _           _____  _                |
+|  | \ | (_) |   | |         |  __ \| |               |
+|  |  \| |_| |__ | |__   __ _| |__) | | __ _ _   _    |
+|  | . ` | | '_ \| '_ \ / _` |  ___/| |/ _` | | | |   |
+|  | |\  | | |_) | |_) | (_| | |    | | (_| | |_| |   |
+|  |_| \_|_|_.__/|_.__/ \__,_|_|    |_|\__,_|\__, |   |
+|                                             __/ |   |
+|                                            |___/    |
++-------------===[ File Specifications ]===-----------+
+|                                                     |
+| Build Number:           1.0.0                       |
+| Build on Website        1.0.0                       |
+| File Name:              style.scss                  |
+| Created By:             NuutXD                      |
+| Last Edited By:         NuutXD                      |
+| Languages:                                          |
+|  - SCSS                                             |
+|  - CSS                                              |
+|                                                     |
++-----------------------------------------------------+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Color variables, easy to change */
+$main: #33cc66;
+$background: #111;
+$content: #1b1b1b;
+$foreground: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background: $background;
+  overflow-x: hidden;
+}
+
+span {
+  color: $main;
+}
+
+.topnav {
+  height: 100px;
+  width: 100%;
+  background: $content;
+  position: fixed;
+  top: 0;
+  z-index: 99999999999999999999999999999999999999999999999999;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.topnav .headerimg a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  float: left;
+}
+
+.topnav .headerimg a img {
+  height: 80px;
+  width: auto;
+}
+.betaheader {
+  background: #ff2233;
+  position: absolute;
+  color: white;
+  font-weight: 900;
+  padding: 5px 20px;
+  border-radius: 10px;
+  top: 25px;
+  left: 65px;
+  transform: rotate(-15deg);
+  font-size: 24px;
+}
+
+.nav-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-row-end: 10px;
+  float: right;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.nav-items .nav-item {
+  color: $main;
+  text-decoration: none;
+  font-size: 26px;
+  background: $foreground;
+  width: 45px;
+  height: 45px;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items p {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content {
+  background: $content;
+  margin-top: 50px;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  .swiper {
+    padding: 10px;
+    overflow: visible;
+    width: 1080px;
+  }
+
+  .swiper-wrapper {
+    overflow: visible;
+  }
+
+  .swiper-button-next {
+    font-weight: 900;
+    transition: all 0.3s ease;
+    background: rgba(27, 27, 27, 0.8);
+    height: 280px;
+    width: 61px;
+    transform: translateY(-118px) translateX(73px);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: rgba(0, 0, 0, 0);
+    &:hover {
+      color: $main;
+    }
+  }
+
+  .swiper-button-prev {
+    color: $main;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    background: rgba(27, 27, 27, 0.8);
+    height: 280px;
+    width: 61px;
+    transform: translateY(-118px) translateX(-73px);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: rgba(0, 0, 0, 0);
+    &:hover {
+      color: $main;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #11aa44;
+}
+
+#userPanel {
+  display: none;
+  background: #1b1b1b;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  .userPanel-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    &:last-of-type {
+      margin: 0;
+    }
+    i {
+      color: $main;
+    }
+    .fa-angle-left {
+      font-size: 20px;
+      transform: translateY(2px);
+      transition: all 0.3s ease;
+      margin-right: 8px;
+    }
+  }
+  .betatester {
+    position: relative;
+
+    .betapanel {
+      width: 150px;
+      height: 80px;
+      background: $content;
+      display: none;
+      position: absolute;
+      left: 0;
+      transform: translateX(-150px) translateY(-25px);
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      padding: 10px;
+      overflow: hidden;
+      .beta-item {
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+        i:first-of-type {
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+      }
+      &:hover {
+        display: block;
+      }
+    }
+    &:hover {
+      .betapanel {
+        display: block;
+        animation: betaPanel 0.3s ease forwards;
+      }
+      .fa-angle-left {
+        transform: rotate(-90deg) translateY(2px);
+      }
+    }
+  }
+}
+
+@keyframes userPanel {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes betaPanel {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 80px;
+    opacity: 1;
+  }
+}
+.searchbar {
+  background: $foreground;
+  height: 50px;
+  width: 300px;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  transform: translateX(-50%);
+}
+
+.searchbar button {
+  color: $main;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.searchbar input {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  height: 50px;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  border-radius: 150px;
+  border: solid 1px $foreground;
+  transition: all 0.3s ease;
+}
+
+.searchbar input:hover {
+  border: solid 1px $main;
+  box-shadow: 0 0px 10px $main;
+}
+
+.searchbar input:focus {
+  outline: none;
+  border: solid 1px $main;
+  box-shadow: 0 0px 10px $main;
+}
+
+.list {
+  margin-top: 150px;
+  border-radius: 25px;
+}
+
+.list-item {
+  display: block;
+  color: $main;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.listgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.videowrapper {
+  width: 200px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: solid 3px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin: 15px auto;
+  background: $background;
+  position: relative;
+
+  img {
+    width: 200px;
+    transition: all 0.3s ease;
+  }
+
+  button {
+    position: absolute;
+
+    background: $content;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border: solid 3px rgba(255, 255, 255, 0.1);
+    border-radius: 1000px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(70px);
+  }
+  .watch {
+    top: 215px;
+    color: $main;
+    left: 30px;
+    &:hover {
+      border-color: rgba(51, 204, 102, 0.8);
+      cursor: pointer;
+    }
+    transition: transform 0.3s ease 0.1s, border-color 0.3s ease,
+      color 0.3s ease;
+  }
+  .info {
+    top: 215px;
+    left: 80px;
+    color: rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      border-color: rgba(51, 204, 102, 0.8);
+      cursor: pointer;
+      color: $main;
+      p {
+        color: red;
+      }
+    }
+    transition: transform 0.3s ease 0.2s, border-color 0.3s ease,
+      color 0.3s ease;
+  }
+  .love {
+    top: 215px;
+    color: rgba(255, 255, 255, 0.3);
+    left: 130px;
+    &:hover {
+      border-color: rgba(243, 55, 114, 0.8);
+      cursor: pointer;
+      color: #f33772;
+    }
+    transition: transform 0.3s ease 0.3s, border-color 0.3s ease,
+      color 0.3s ease;
+  }
+  h1 {
+    left: 12.5px;
+    top: 10px;
+    position: absolute;
+    color: $main;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    text-align: center;
+    width: 175px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+  }
+
+  p {
+    position: absolute;
+    color: white;
+    left: 12.5px;
+    top: 50px;
+    height: 153px;
+    overflow: hidden;
+    width: 175px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+  }
+  &:hover {
+    border-color: rgba(51, 204, 102, 0.8);
+    transform: scale(1.05);
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(51, 204, 102, 0.4);
+    width: 200px;
+    z-index: 9999;
+    img {
+      opacity: 0.1;
+    }
+    h1 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.movieslide {
+  /**/
+  margin: 0 auto;
+  margin-top: 110px;
+  height: 650px;
+  width: 85%;
+  .featmovies {
+    /**/
+    overflow: visible;
+    .swiper-wrapper {
+      /**/
+      overflow: visible;
+      .featmovie {
+        width: 100%;
+        height: 650px;
+        border-radius: 25px;
+        overflow: hidden;
+        border: solid 3px rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        &:hover {
+          border-color: rgba(51, 204, 102, 0.8);
+          transform: scale(1.01);
+          .title {
+            height: fit-content;
+            .desc {
+              position: relative;
+            }
+          }
+        }
+        .movie {
+          width: 100%;
+          height: 650px;
+          margin: 0;
+          object-fit: cover;
+        }
+        .title {
+          z-index: 100;
+          position: absolute;
+          top: 40px;
+          left: 100px;
+          width: 40%;
+          animation: featmovielogo 1s ease forwards;
+          font-size: 36px;
+          color: $main;
+          text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+          background: $content;
+          padding: 8px 16px;
+          border-radius: 15px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+          overflow: hidden;
+          transition: all 0.3s ease;
+          h1 {
+            color: $main;
+          }
+          .desc {
+            color: white;
+            width: 100%;
+            padding: 5px 20px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+            font-size: 16px;
+            position: absolute;
+          }
+        }
+      }
+    }
+    .swiper-pagination {
+      z-index: 10000;
+      width: fit-content;
+      padding: 0 20px;
+      left: unset;
+      right: 40px;
+      border-radius: 100px;
+      background: $content;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 0.2;
+      }
+      .swiper-pagination-bullet-active {
+        background: $main;
+        opacity: 1;
+      }
+    }
+    .swiper-button-next {
+      font-weight: 900;
+      transition: all 0.3s ease;
+      background: rgba(27, 27, 27, 0.8);
+      height: 650px;
+      width: 80px;
+      transform: translateY(-303px) translateX(160px);
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      color: rgba(0, 0, 0, 0);
+      &:hover {
+        color: $main;
+      }
+    }
+
+    .swiper-button-prev {
+      color: $main;
+      font-weight: 900;
+      transition: all 0.3s ease;
+      background: rgba(27, 27, 27, 0.8);
+      height: 650px;
+      width: 80px;
+      transform: translateY(-303px) translateX(-160px);
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      color: rgba(0, 0, 0, 0);
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}
+
+.compselect {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 50px;
+  .compwrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 150px;
+    width: 100%;
+
+    .grid-item {
+      height: 150px;
+      width: auto;
+      margin: auto 10px;
+      background: $foreground;
+      border-radius: 15px;
+      border: solid 3px rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      &:hover {
+        border-color: rgba(51, 204, 102, 0.8);
+        transform: scale(1.05);
+        background-size: cover;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+      }
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+    .fnf img {
+      width: 80%;
+    }
+    .lego img {
+      width: 40%;
+    }
+    .horror img {
+      width: 80%;
+    }
+    .dc img {
+      width: 50%;
+    }
+    .marvel:hover {
+      background-image: url("../bilder/marvel-intro.gif");
+    }
+    .starwars:hover {
+      background-image: url("../bilder/starwars-intro.gif");
+    }
+    .fnf:hover {
+      background-image: url("../bilder/fnf-intro.gif");
+    }
+    .lego:hover {
+      background-image: url("../bilder/lego-intro.gif");
+    }
+    .horror:hover {
+      background-image: url("../bilder/horror-intro.gif");
+    }
+    .dc:hover {
+      background-image: url("../bilder/dc-intro.gif");
+    }
+  }
+}
+
+@keyframes featmovielogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes featmoviepic {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

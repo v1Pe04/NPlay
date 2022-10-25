@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    background:#111;
+}
+
+.box {
+    position: absolute;
+    margin:0 auto;
+    width:900px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    background:#1b1b1b;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+form {
+    padding: 35px;
+}
+
+.skjema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    text-align: left;
+    
+}
+
+.text {
+    border:none;
+    border-bottom: 1px solid #333;
+    background:#333;
+    color:white;
+    font-weight:400;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:350px;
+    height: 30px;
+    margin:10px 0;
+    transition: all .1s ease;
+}
+
+.skjema textarea {
+    border:none;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.button1 {    
+    border:none;
+    position: absolute;
+    background:#333;
+    color:#33cc66;
+    font-weight:800;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:80px;
+    height: 33px;
+    margin:10px 0;
+    transition: all .1s ease;
+    cursor: pointer;
+    border-left:solid 3px #33cc66;
+    transform:translateX(-147px)translateY(-181.5px);
+    
+}
+
+.button2 {    
+    border:none;
+    position: absolute;
+    background:#333;
+    color:#33cc66;
+    font-weight:800;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:80px;
+    height: 33px;
+    margin:10px 0;
+    transition: all .1s ease;
+    cursor: pointer;
+    border-left:solid 3px #33cc66;
+    transform:translateX(-320px)translateY(-40.5px);
+    
+}
+
+iframe {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    height: 130px;
+    width: 260px;
+}
+
+.text1 {
+    border:none;
+    border-bottom: 1px solid #333;
+    background:#333;
+    color:white;
+    font-weight:400;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:350px;
+    height: 65px;
+    margin:10px 0;
+    transition: all .1s ease;
+}
+
+.text2 {
+    border:none;
+    border-bottom: 1px solid #333;
+    background:#333;
+    color:white;
+    font-weight:400;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:350px;
+    height: 130px;
+    margin: 0;
+    transition: all .1s ease;
+}
+
+.text3 {
+    border:none;
+    position: absolute;
+    border-bottom: 1px solid #333;
+    background:#333;
+    color:white;
+    font-weight:400;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    width:100px;
+    height: 30px;
+    margin-left: 10px;
+    transition: all .1s ease;
+    transform: translateX(-430px) translateY(-30px);
+}
+
+.text:focus, .text1:focus, .text2:focus, .text3:focus {
+    outline:none;
+    border-bottom: 1px solid #33cc66;
+}
+
+.button {
+    border:none;
+    background-color: #33cc66;
+    color:white;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border-radius: 50px;
+    width: 120px;
+    margin-top:20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    height: 50px;
+    position: absolute;
+    right: 70px;
+    cursor: pointer;
+    transform: translateY(60px);
+}
+
+.nav-item {
+    margin-top: 20px;
+}
+
+.nav-item .icon a {
+    text-decoration: none;
+    color: #333;
+    font-size: 50px;
+    margin: 15px;
+    transform: scaleX(-1);
+}
+
+p {
+    margin:0;
+    margin-bottom:10px;
+}
+
+@keyframes onClick {
+    0% {background:#999;}
+    100% {background:#333;}
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #33CC66;
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #11aa44;
+  
+  }

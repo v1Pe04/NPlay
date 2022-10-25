@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.small-img img {
+  object-fit: cover;
+  width: 200px;
+}
+
+.small-img h2 {
+  display: none;
+}
+
+.small-img h3 {
+  display: none;
+}
+
+.small-img .imdbRatingPlugin {
+  display: none;
+}
+
+.swiper-slide img {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1);
+  position: absolute;
+}
+
+.swiper-slide:hover img {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+span {
+  color: #33cc66;
+}

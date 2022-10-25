@@ -1,0 +1,77 @@
+/* Laget av Viljar */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    background:#222;
+}
+
+.box {
+    position: absolute;
+    margin:0 auto;
+    width:400px;
+    text-align: center;
+    background:#333;
+    border: solid 2px red;
+    height: 300px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.text {
+    border:none;
+    border-bottom:solid 1px white;
+    background:#333;
+    color:white;
+    font-weight:500;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+    width:250px;
+    margin:10px 0;
+}
+
+.text:focus {
+    outline:none;
+    animation: focus 100ms ease-in-out;
+    border-color:red;
+}
+
+@keyframes focus {
+    0%{border-color:white;}
+    100%{border-color:red;}
+}
+
+.button {
+    border:none;
+    background:red;
+    color:white;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 50px;
+    width:150px;
+    cursor:pointer;
+    margin-top:20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    height: 40px;
+}
+
+p {
+    margin:0;
+    margin-bottom:10px;
+}
+
+.box a {
+  color:white;
+  background:linear-gradient(to bottom,#FF0000, #CD0707);
+  text-decoration: none;
+  border-radius:20px;
+  padding:2px 10px;
+}
+
+.box a span {
+    text-decoration: underline;
+}
